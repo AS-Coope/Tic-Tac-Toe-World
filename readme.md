@@ -16,3 +16,9 @@ Or you can use build the Tic-Tac-Toe World v(y.y.y) file and run it (where y.y.y
 The intent is to polish this game to better understand C, finish an idea I've had for years and become more efficient at programming. Then create a small game engine in C++ and recreate it using that.  
 
 As such, over the following weeks the game will be updated until it reaches the final design I had in mind.  
+
+# Current Objectives
+1. Figure out what causes errors and fix those issues.
+2. Convert the one file into several files to organize the code (UI, Controller, Logic, Database).
+3. Create folders to further organize code.
+4. Redo the "AI".
