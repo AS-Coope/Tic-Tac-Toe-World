@@ -1,0 +1,77 @@
+Tic-Tac-Toe: World - Help File
+
+WARNING:
+When playing the game, the player must not enter a character (for example, a letter or symbol) or a word as A MOVE on the game board.
+This WILL CRASH THE GAME. The progress during that match WILL NOT be saved. If this occurs, immediately close the game then restart it. 
+Wherever the player is prompted for a number, do not put a character or word as the input.
+
+DO NOT ADJUST THE FOLLOWING FILES THAT ARE ASSOCIATED WITH THE GAME:
+1. player1.txt
+2. TTCWthemes.txt
+3. PlayerProgress.txt
+
+Changing the data in these files will affect game data.
+
+The following 2 respones are the ONLY EXCEPTIONS to adjusting the data within the files:
+
+1. If the file is seen to be empty, the player may adjust the data to suit their needs.
+   An empty file may be the result of someone removing the data in the file or the program removing the data from the file.
+   The latter should not alert the player. The program, through testing, has been shown not to empty files, without 
+   entering data into it after, so this occurring would not be likely and possibly only occur if another part of the code
+   is affected.
+
+   How each file should be treated if the file is empty:
+  
+   1. PlayerProgress.txt:
+      This file tracks the progress of the player in Story Mode. This allows the player to face each boss at a specific experience level.
+      However, if the player has reached a boss higher than boss 1, and then this file is emptied (data removed), the player will only be able   
+      to face boss 1, until boss 1 is beaten. The player can either start again from boss 1 or can enter any of the following numbers to access 
+      the boss they were at.     
+      NOTE: The player is advised to use only the numbers regarding the boss they are currently at. The developer emphasizes this so the player  
+            can have a full experience of Story Mode.
+      To play Boss 2, enter 20 in the file, save the file and close it.
+      To play Boss 3 and lower, enter 40 in the file, save the file and close it.
+      To play Boss 4 and lower, enter 60 in the file, save the file and close it.
+      To play Boss 5 and lower, enter 80 in the file, save the file and close it.
+
+   2. TTCWthemes.txt:
+      Changing data in this file, based on testing, will not crash it. The player should not be worried about this file. In the case it is changed, the
+      player can change the theme in the Settings of the game, located in the game's Main Menu, or in the file, using any number from 1 to 5 to choose a colour, 
+      save the file and close it.
+
+   3. player1.txt:
+      If this file is empty, the player's name will not show up in Story Mode which will affect how the player is presented in the game. If this occurs,
+      the player can either go into the Settings of the game, located in the game's Main Menu, or open the file, enter their player name, save the file and
+      close it.
+
+2. If the file is not created by the program:
+   
+   When the player gets the game's program, intially, these files will not be present in the folder the code is in. Upon running the game, the files are created in 
+   the same folder as the code. However, in the event these files are not created, the player can create them IN THE FOLDER the CODE/ PROGRAM resides in (If the game
+   is on the Desktop then create these files on the Desktop). Shifting the game from one folder to another without moving the files too, may not be an issue, as the
+   game generates these files on its own. However, the progress the player made before will be affected.
+  
+   When creating these files, make sure to write the names exactly as they are written below, including capitalization and spaces, if any, or the data will 
+   not be saved in them:
+   PlayerProgress.txt
+   TTCWthemes.txt
+   player1.txt
+
+3. When entering names, DO NOT exceed 14 characters (or letters/symbols). Each name is expected to be a specific size and putting too many letters can result
+   in the player's name looking different, misrepresenting them. This applies to both Tournament Mode and Story Mode.
+
+4. DO NOT enter only one character (or letter/symbol) as a name. Especially in Tournament Mode, this may cause the name to be misrepresented. The developer currently
+   does not know the issue that causes this but to avoid this problem, write names containing more than one (1) character (and less than fifteen (15)). This applies to
+   both Story Mode and Tournament Mode.
+
+5. When entering a player name, DO NOT put spaces between different words. The code does not accept words this way and will pass the word after the space onto another 
+   player name if another player name is required after the first player's name. This applies to both Tournament Mode and Story Mode.
+
+6. DO NOT adjust game code IF you do not understand how it works or how to code in the C language. You may adjust if you pass these parameters, but be sure to save a
+   copy of the code before adjusting it, in case the code you add does not accomplish what you want.
+
+7. If the game pauses and does not give you a prompt to enter numbers, then press any key, that will allow it to progress.
+
+8. When prompted (or requested by the game) to enter a number, press the desired number, then press the Enter key. This will give the game your input.
+
+                                     Thank You for playing Tic-Tac-Toe: World. The developer appreciates it. Have fun!
