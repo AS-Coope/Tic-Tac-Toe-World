@@ -4,7 +4,7 @@ while gaming experience.
 
 ** The current game has issues when playing (specifically against the higher bosses in Story Mode)  
 ** However, Tournament Mode is working as it (at least from the time of design) should so you can enjoy with friends.  
-** IDE used was Codeblocks (despite their being a vscode folder here I haven't properly set it up so that is builds in VSCode using mingw)  
+** IDE used was Codeblocks (despite there being a vscode folder here I haven't properly set it up so that is builds in VSCode using mingw)  
 
 # How to Play
 Download and unzip the folder.  
