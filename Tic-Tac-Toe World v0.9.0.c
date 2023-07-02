@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <windows.h>
+#include "main_menu.c"
 
 /***Global Declaration of Variables***/
 
@@ -101,7 +102,7 @@ int matchNum = 0;
 int roundNum = 0;
 
 ///Function Declarations
-void mainMenu ();
+//void mainMenu (); to be removed
 void warning ();
 void gameBoard ();
 int gameCheck ();
@@ -127,20 +128,20 @@ void themes();
 void themeCheck ();
 void chooseATheme();
 void checkNullTheme();
-void settings ();
+//void settings ();
 void changeStoryName ();
 int checkNullName ();
 void storyMode();
-void play ();
+//void play(); // to be removed
 void tournamentMode();
 void theBoss1(char *, char *, char *, char *, char *);
 void theBoss2(char *, char *, char *, char *);
 void theBoss3(char *, char *, char *, char *);
 void theBoss4(char *, char *, char *, char *);
 void theBoss5(char *, char *, char *, char *);
-void about ();
-void instructions ();
-void secrets ();
+//void about (); // to be removed
+//void instructions(); // to be removed
+//void secrets(); to be removed
 void introduction(char *, char *);
 void getPlayerName ();
 void moveOverride(char *);
@@ -153,9 +154,9 @@ void boss2Battle(char *);
 void boss3Battle (char *);
 void boss4Battle (char *);
 void boss5Battle (char *);
-void bossSecrets ();
-void gameHints ();
-void unknownSecret ();
+//void bossSecrets (); // to be removed
+//void gameHints(); // to be removed
+//void unknownSecret(); // to be removed
 int storyNameCheck ();
 void handle();
 
@@ -4175,37 +4176,6 @@ void theBoss5(char *firstPlayer, char *prettyBerserk, char *herName, char *aBoss
         getch ();
         storyMode();
     }
-}
-
-void about ()
-{
-    system ("cls");
-    printf ("\t|About:\n");
-    printf ("\t|Tic-tac-toe is a strategy game where players choose a tile to place a target. Getting 3 targets in a row, column ");
-    printf ("or diagonally makes that \n\t|player the winner of the game. This website was very helpful in helping me ");
-    printf ("understand the inner workings of it: \n\t|http://cprogrammingnotes.com/question/tic-tac-toe-game.html . ");
-    printf ("I analayzed and used some of the code, tweaking it to fit this version. It is the\n\t|first game I thought of coding and ");
-    printf ("it taught me a lot (plus Youtubers kept telling me to try this to start making games). \n\t|I made it for fun as a summer project and I put the logo in at the start ");
-    printf ("(a twist on my handle) for fun.\n\t");
-    printf ("\n\t|The game eventually turned into my SBA and with the help of my friends, my teacher, Mr. Lewis, and the good old internet, ");
-    printf ("I have been able to complete it,\n\t|calling it Tic-Tac-Toe: World because of its Story Mode.\n\t|Have fun playing!\n\t");
-    printf ("-ZrC\n");
-    getch ();
-    mainMenu();
-}
-
-void instructions ()
-{
-    system ("cls");
-    printf ("\t|Instructions:\n");
-    printf ("\t|In Tic-tac-toe: World, choose a tile from the 9 tiles arranged in a 3 x 3 (MATRIX) board.\n");
-    printf ("\t|Place your target on any of the tiles that does not already have a target.\n");
-    printf ("\t|Once you have 3 of your targets either placed vertically, horizontally or diagonally, you win.\n");
-    printf ("\t|If the opposite occurs you lose. The other option is a draw.\n");
-    printf ("\t|The Story Mode and Tournament Mode should be a fun change. Enjoy!\n\t");
-    printf ("-ZrC\n");
-    getch ();
-    mainMenu();
 }
 
 void boss1Battle(char *thisForAnotherBoss)
