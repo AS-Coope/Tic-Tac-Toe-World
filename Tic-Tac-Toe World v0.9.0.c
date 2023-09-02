@@ -4011,6 +4011,9 @@ void theBoss4(char *firstPlayer, char *prettyBerserk, char *herName, char *aBoss
 
             prog_ptr = fopen ("PlayerProgress.txt", "w");
             progress = 80;
+            // when refactoring make constants for each progress value: eg const PROGRESS_80 = 80
+            // then make progress be equal to that value
+            // also make a save function to accompany where the necessary progress const is an argument
             fprintf (prog_ptr, "%d", progress);
             fclose (prog_ptr);
 
